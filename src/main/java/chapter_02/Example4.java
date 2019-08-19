@@ -10,8 +10,8 @@ public class Example4 {
     private int c = 2018;
 
     public void calcHash() {
-        // Fast version of "hash = (65599 * hash) + c"
-        hash = (hash << 6) + (hash << 16) - hash + c;
+        // Fast version of "hash = (65599 * hash) + c"//优秀(注释)版本
+        hash = (hash << 6) + (hash << 16) - hash + c;//普通版本
     }
 
 }

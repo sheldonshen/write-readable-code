@@ -20,12 +20,18 @@ public class Example3 {
         return coderMap.get(key);
     }
 
+    /**
+     * 普通版本
+     */
     public void before() {
         Coder   coder;
         boolean hasGirlFriend = (null != (coder = findCoder("biezhi"))) && coder.hasGirlFriend();
         System.out.println("是否有女朋友: " + hasGirlFriend);
     }
 
+    /**
+     * 优秀版本
+     */
     public void after() {
         Coder coder = this.findCoder("biezhi");
         if(null != coder){

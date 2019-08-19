@@ -16,13 +16,19 @@ public class Example1 {
         nodes.add(new Node());
     }
 
-    public void snippet1() {
+    /**
+     * 优秀版本
+     */
+    public void after() {
         for (Node node = nodes.peek(); node != null; node = node.next()) {
             System.out.println(node.data());
         }
     }
 
-    public void snippet2() {
+    /**
+     * 普通版本
+     */
+    public void before() {
         Node node = nodes.peek();
         if (node == null) return;
         while (node.next() != null) {
